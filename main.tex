@@ -45,7 +45,7 @@ A continuación procederemos con el estudio de uno de los componentes que integr
 \section{Preguntas} \label{contenido}
 
 \subsection{¿Qué es la memoria?} \label{contenido}
-La memoria es un circuito electrónico que está compuesto por un conjunto de chips, ésta se encuentra presente en el hardware de nuestros dispositivos tecnológicos (como: PC, celulares, electrodomésticos, etc.). En ésta se guarda la información que van a ejecutar dichos dispositivos (por ejemplo, el sistema operativo), y funciona mediante señales eléctricas que comúnmente se suele denominar binario (0 cuando exista ausencia de voltaje y 1 para indicar que hay voltaje), la capacidad de la memoria la podemos medir en byte (que son la unión de 8 bits). La memoria (en este caso la de un computador), guarda de forma temporal la información que se obtiene de ejecutar las instrucciones que ingresa el usuario mediante los periféricos de entrada de la máquina (estas instrucciones se traducen a código binario, es decir, cadenas de ceros y unos que es lo que entiende el procesador). La memoria está en constante comunicación con la CPU quien recibe las instrucciones y datos de entrada que previamente fueron guardados en la memoria (todas la modificaciones o manipulación de la información no se efectúan directamente sobre la información contenida en el disco duro, si no en una copia que se encuentra en ejecución en la memoria). y a diferencia del disco duro,la memoria tiene mayor velocidad para procesar la información. 
+La memoria es un circuito electrónico que está compuesto por un conjunto de chips, ésta se encuentra presente en el hardware de nuestros dispositivos tecnológicos (como: PC, celulares, electrodomésticos, etc.). En ésta se guarda la información que van a ejecutar dichos dispositivos (por ejemplo, el sistema operativo), y funciona mediante señales eléctricas que comúnmente se suele denominar binario (0 cuando exista ausencia de voltaje y 1 para indicar que hay voltaje), la capacidad de la memoria la podemos medir en byte (que son la unión de 8 bits). La memoria (en este caso la de un computador), "guarda de forma temporal la información que se obtiene de ejecutar las instrucciones que ingresa el usuario mediante los periféricos de entrada de la máquina (estas instrucciones se traducen a código binario, es decir, cadenas de ceros y unos que es lo que entiende el procesador)"\cite{Quiroga}. La memoria está en constante comunicación con la CPU quien recibe las instrucciones y datos de entrada que previamente fueron guardados en la memoria (todas la modificaciones o manipulación de la información no se efectúan directamente sobre la información contenida en el disco duro, si no en una copia que se encuentra en ejecución en la memoria). y a diferencia del disco duro,la memoria tiene mayor velocidad para procesar la información. 
 
 \subsection{Tipos de memoria y descripcion de cada una de ellas}
 \textbf{Memoria RAM:}
@@ -53,9 +53,7 @@ Memoria de acceso aleatorio.
 \newline
 \newline
 "La memoria RAM es la memoria principal de un dispositivo donde se almacena programas y datos informativos. Las siglas RAM significan “Random Access Memory” traducido al español es “Memoria de Acceso Aleatorio”.
-La memoria RAM es conocida como memoria volátil lo cual quiere decir que los datos no se guardan de manera permanente, es por ello, que cuando deja de existir una fuente de energía en el dispositivo la información se pierde. Asimismo, la memoria RAM puede ser reescrita y leída constantemente.
-Los módulos de RAM, conocidos como memoria RAM son integrantes del hardware que contiene circuitos integrados que se unen al circuito impreso, estos módulos se instalan en la tarjeta madre de un ordenador. Las memorias RAM forman parte de ordenadores, consolas de videojuegos, teléfonos móviles, tablets, entre otros aparatos electrónicos.
-Existen 2 tipos básicos de memoria RAM; RAM dinámica (DRAM) y RAM estática (SRAM), ambas utilizan diferentes tecnologías para almacenar los datos. La RAM dinámica (DRAM) necesita ser refrescada 100 de veces por segundos, mientras que la RAM estática (SRAM) no necesita ser refrescada tan frecuentemente lo que la hace más rápida pero también más cara que la memoria RAM dinámica."\cite{RAM} 
+La memoria RAM es conocida como memoria volátil lo cual quiere decir que los datos no se guardan de manera permanente, es por ello, que cuando deja de existir una fuente de energía en el dispositivo la información se pierde. Asimismo, la memoria RAM puede ser reescrita y leída constantemente."\cite{RAM} 
 \newline
 \newline
 A continuación se presenta la imagen de una memoria RAM (\ref{fig:memoria-RAM})
@@ -64,7 +62,6 @@ A continuación se presenta la imagen de una memoria RAM (\ref{fig:memoria-RAM})
 \caption{Memoria RAM}
 \label{fig:memoria-RAM}
 \end{figure}
-
 \newline
 \textbf{Memoria ROM:} Memoria de solo lectura.
 \newline
@@ -82,8 +79,18 @@ A continuación se presenta la imagen de una memoria ROM (\ref{fig:memoria-ROM})
 \caption{Memoria ROM}
 \label{fig:memoria-ROM}
 \end{figure}
-
-
+\newline 
+\newline 
+\textbf{Memoria cache}
+\newline
+\newline
+"Se conoce como memoria caché o memoria de acceso rápido a uno de los recursos con los que cuenta una CPU (Central Processing Unit, o sea, Unidad Central de Procesamiento) para almacenar temporalmente los datos recientemente procesados en un búfer especial, es decir, en una memoria auxiliar.
+\newline
+La memoria caché opera de modo similar a la Memoria Principal del CPU, pero con mayor velocidad a pesar de ser de mucho menor tamaño. Su eficacia provee al microprocesador de tiempo extra para acceder a los datos más frecuentemente utilizados, sin tener que rastrearlos a su lugar de origen cada vez que sean necesarios."\cite{Cache}
+\newline
+\newline
+\textbf{Memoria RAM Dinámica (Dynamic DRAM)}
+\newline
 \subsection{¿Como se gestiona la memoria en el computador?}
 
 A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
