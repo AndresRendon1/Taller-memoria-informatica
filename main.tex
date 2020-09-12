@@ -39,13 +39,18 @@
 \tableofcontents
 
 \section{Sección introductoria}
-Los desarrollos tecnológicos que se han obtenido a lo largo de la historia, han desempeñado un papel muy importante en nuestras vidas, pues nos han facilitado en gran medida el desarrollo de muchas actividades, por esto nos centraremos en uno de los avances tecnológicos mas importantes del siglo XX, el computador. 
+Los desarrollos tecnológicos que se han obtenido a lo largo de la historia, han desempeñado un papel muy importante en nuestras vidas, pues nos han facilitado en gran medida el desarrollo de muchas actividades. Por esta razón en este trabajo nos centraremos en uno de los avances tecnológicos mas importantes del siglo XX, el computador.
+\newline
 A continuación procederemos con el estudio de uno de los componentes que integran el hardware, la "memoria". 
 
 \section{Preguntas} \label{contenido}
 
 \subsection{¿Qué es la memoria?} \label{contenido}
-La memoria es un circuito electrónico que está compuesto por un conjunto de chips, ésta se encuentra presente en el hardware de nuestros dispositivos tecnológicos (como: PC, celulares, electrodomésticos, etc.). En ésta se guarda la información que van a ejecutar dichos dispositivos (por ejemplo, el sistema operativo), y funciona mediante señales eléctricas que comúnmente se suele denominar binario (0 cuando exista ausencia de voltaje y 1 para indicar que hay voltaje), la capacidad de la memoria la podemos medir en byte (que son la unión de 8 bits). La memoria (en este caso la de un computador), "guarda de forma temporal la información que se obtiene de ejecutar las instrucciones que ingresa el usuario mediante los periféricos de entrada de la máquina (estas instrucciones se traducen a código binario, es decir, cadenas de ceros y unos que es lo que entiende el procesador)"\cite{Quiroga}. La memoria está en constante comunicación con la CPU quien recibe las instrucciones y datos de entrada que previamente fueron guardados en la memoria (todas la modificaciones o manipulación de la información no se efectúan directamente sobre la información contenida en el disco duro, si no en una copia que se encuentra en ejecución en la memoria). y a diferencia del disco duro,la memoria tiene mayor velocidad para procesar la información. 
+La memoria es un circuito electrónico que está compuesto por un conjunto de chips, ésta se encuentra presente en el hardware de nuestros dispositivos tecnológicos (como: PC, celulares, electrodomésticos, etc.). Su función consiste en guardar la información que van a ejecutar dichos dispositivos (por ejemplo, los programas que contienen las instrucciones para que funcione el dispositivo).
+\newline
+La memoria funciona mediante señales eléctricas, que comúnmente se suele denominar binario (0 cuando exista ausencia de voltaje y 1 para indicar que hay voltaje). Su capacidad se mide en byte (que son la unión de 8 bits). La memoria (en este caso la de un computador). " Guarda de forma temporal la información que se obtiene de ejecutar las instrucciones que ingresa el usuario mediante los periféricos de entrada de la máquina (estas instrucciones se traducen a código binario, es decir, cadenas de ceros y unos que es lo que entiende el procesador)".\cite{Quiroga}.
+\newline
+"La memoria está en constante comunicación con la CPU quien recibe las instrucciones y datos de entrada que previamente fueron guardados en la memoria (todas la modificaciones o manipulación de la información no se efectúan directamente sobre la información contenida en el disco duro, si no en una copia que se encuentra en ejecución en la memoria). La gran ventaja que posee la memoria frente a otros dispositivos como el disco duro, es que la memoria tiene mayor velocidad para procesar la información".\cite{Guia}.
 
 \subsection{Tipos de memoria y descripcion de cada una de ellas}
 \textbf{Memoria RAM:}
@@ -109,7 +114,7 @@ A continuación se presenta la imagen de una memoria DRAM
 \newline
 \newline
 \textbf{Memoria flash}
-Es un dispositivo electronico, que permite realizar lectura y escritura de información. y que al suspender la fuente de alimentacion esta sigue conservando la informacion que se habia guardado previamente en ella.
+Es un dispositivo electronico, que permite realizar lectura y escritura de información. y que al suspender la fuente de alimentacion esta sigue conservando la informacion que se habia guardado previamente en ella.\cite{flash}.
 \newline
 \newline
 A continuación se presenta la imagen de una memoria flash
@@ -124,25 +129,30 @@ A continuación se presenta la imagen de una memoria flash
 \
 
 \subsection{¿Como se gestiona la memoria en el computador?}
-\newline
-En nuestro computador hay presentes distintos tipos de memorias, por ejemplo: la memoria ROM (en la cual se encuentra la BIOS de nuestra maquina). una vez encendemos nuestro computador la memoria ROM se encarga de realizar el chequeo de los componentes de nuestro dispositivo, una vez completado este chequeo, accede a la sección del disco duro donde esta instalado el sistema operativo y carga las instrucciones del sistema operativo en la memoria RAM, la cual  trabaja en conjunto con el microprocesador este recibe la información de la memoria RAM para ejecutar los procesos previamente definidos , una vez inicie el sistema y se ejecute algun programa, este sera cargado en la memoria para que el microprocesador tenga acceso inmediato a esta informacion. pues la memoria es mas rápida que el disco duro, pero esta memoria (la RAM) es volátil por lo que al apagar el dispositivo toda la información que se encuentra en la memoria se borrara una vez se corte el suministro electrico.\cite{Gestion},\cite{Guia}
+En nuestro computador hay presentes distintos tipos de memorias, por ejemplo: la memoria ROM (en la cual se encuentra la BIOS de nuestra maquina). una vez encendemos nuestro computador la memoria ROM se encarga de realizar el chequeo de los componentes de nuestro dispositivo, una vez completado este chequeo, accede a la sección del disco duro donde esta instalado el sistema operativo y carga las instrucciones del sistema operativo en la memoria RAM, la cual  trabaja en conjunto con el microprocesador este recibe la información de la memoria RAM para ejecutar los procesos previamente definidos , una vez inicie el sistema y se ejecute algun programa, este sera cargado en la memoria para que el microprocesador tenga acceso inmediato a esta informacion. Pues la memoria es mas rápida que el disco duro, pero esta memoria (la RAM) es volátil por lo que al apagar el dispositivo toda la información que se encuentra en la memoria se borrara una vez se corte el suministro electrico.\cite{Guia},\cite{Gestion}
 \newline
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+
+Hay varios factores que podriamos tener encuenta para analizar la rapidez de una memoria:
 \newline
-Primordialmente, lo que hace que una memoria sea mucho mas rápida que otra es la función que esta va a desempeñar por ejemplo la memoria cache (la cual esta constituida por capas L1,L2,L3). es más rápida que la memoria RAM , puesto que la memoria cache se encarga de almacenar la información que mas se usa(L1), la que se usa con menor frecuencia (L2) y la que menos se usa (L3), todo esto con el fin de que la información se encuentre de manera mas rapida.
-en el siguiente nivel de jerarquia encontramos a la memoria RAM, que aun que es un poco mas lenta que la memoria cache , es mas rapida que el disco duro, en el siguiente nivel de jerarquia encontramos la memoria virtual que se encarga de sostener los procesos que se utilizan menos o que ocupan espacio innecesario en algún momento determinado y es preferible colocarlos en una zona de reserva donde siempre estarán listos para ser utilizados cuando se los requiera y la memoria virtual es mas lenta que la memoria RAM. en el siguiente nivel de jerarquia encontramos el disco duro en el cual esta contenida la información.
+1. la latencia: mide la cantidad de tiempo que se tarda en obtener de la memoria cada bit de información, o sea el tiempo que pasa desde que el controlador de memoria pide en nombre del microprocesador
+una serie de datos y dichos datos son obtenidos.\cite{Guia}
+\newline
+2,La aquitectura de la memoria: dependiendo de los componentes con los que se fabricó la memoria, por ejemplo: la memoria RAM tiene chips integrados en la placa (circuito impreso), mientras que el disco duro esta compuesto por uno o mas discos. Pero la memoria aun que no puede guardar datos de forma temporal (cosa que el disco duro si puede hacer), esta puede acceder a la información mucho mas rápido que el disco duro  debido a que la información no se guarda de forma secuencial en la memoria (a diferencia del disco duro que graba de forma magnetica la informacion en los discos o platos), por lo que sin importar la ubicación de la información en las "celdas" de la memoria, se podra acceder de forma rápida a la información que se desea, mientras que en el disco duro se tendria que recorrer todo el disco hasta encontrar la información.\cite{Quiroga}
+\newline
+3.Su utilizadad: dependiendo de la función que valla a desempeñar la memoria podria tener mas velocidad respecto a otras por ejemplo la memoria cache es mas rapida que la RAM, pero la RAM es mas rapida que memoria virual quien es mas rapida que el discoduro.
 \newline
 ¿por que es importante?, es importante por que se puede acceder a la información o ejecutar algun proceseo de que el tiempo de espera para obtener el resultado esperado sea mucho menor.
 
 \section{Conclusión} \label{conclulsion}
-\newline
-\textbf{1.} En los computadores existen diferentes tipos de memorias ademas de la RAM y cada una cumple una funcion importante para el correcto funcionamiento del dispositivo (como la Memoria ROM que realiza el chequeo de los componentes del hardware del computador y ademas cuenta con la Bios del Computador).
-\newline
-\newline
-\textbf{2.} El almacenamiento en la memoria RAM , se realiza por medio de "Celdas" , las cuales tienen una respectiva dirección para almacener bits de información
+
+1. En los computadores existen diferentes tipos de memorias ademas de la RAM y cada una cumple una funcion importante para el correcto funcionamiento del dispositivo (como la Memoria ROM que realiza el chequeo de los componentes del hardware del computador y ademas cuenta con la Bios del Computador).
 \newline
 \newline
-\textbf{3.} La memoria RAM a diferencia del disco duro o de una memoria flash , es una memoria volátil es decir , que cuando se corte el suministro electrico la información que este cargada en la memoria se borrara
+2. El almacenamiento en la memoria RAM , se realiza por medio de "Celdas" , las cuales tienen una respectiva dirección para almacener bits de información
+\newline
+\newline
+3. La memoria RAM a diferencia del disco duro o de una memoria flash , es una memoria volátil es decir , que cuando se corte el suministro electrico la información que este cargada en la memoria se borrara
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
